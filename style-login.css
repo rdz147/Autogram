@@ -9,9 +9,11 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #080710;
 }
+
 .background{
     width: 430px;
     height: 520px;
@@ -20,13 +22,15 @@ body{
     left: 50%;
     top: 50%;
 }
-.background .shape{
+
+.background .bola{
     height: 200px;
     width: 200px;
     position: absolute;
     border-radius: 50%;
 }
-.shape:first-child{
+
+.bola:first-child{
     background: linear-gradient(
         #1845ad,
         #23a2f6
@@ -34,7 +38,8 @@ body{
     left: -80px;
     top: -80px;
 }
-.shape:last-child{
+
+.bola:last-child{
     background: linear-gradient(
         to right,
         #2fff39,
@@ -43,6 +48,7 @@ body{
     right: -30px;
     bottom: -80px;
 }
+
 form{
     height: 520px;
     width: 400px;
@@ -57,6 +63,7 @@ form{
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
 }
+
 form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
@@ -77,6 +84,7 @@ label{
     font-size: 16px;
     font-weight: 500;
 }
+
 input{
     display: block;
     height: 50px;
@@ -88,9 +96,11 @@ input{
     font-size: 14px;
     font-weight: 300;
 }
+
 ::placeholder{
     color: #e5e5e5;
 }
+
 button{
     margin-top: 50px;
     width: 100%;
@@ -102,10 +112,12 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
 .social{
   margin-top: 30px;
   display: flex;
 }
+
 .social div{
   background: red;
   width: 150px;
@@ -115,15 +127,19 @@ button{
   color: #eaf0fb;
   text-align: center;
 }
+
 .social div:hover{
   background-color: rgba(255,255,255,0.47);
 }
+
 .social .fb{
   margin-left: 25px;
 }
+
 .social i{
   margin-right: 4px;
 }
+
 
 .logola{
     margin: auto;
