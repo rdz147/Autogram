@@ -45,7 +45,7 @@ img {
     outline: 0.5rem auto #4d90fe;
 }
 
-.visually-hidden {
+.prr-escondida {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -53,17 +53,17 @@ img {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.profile {
+.perfil {
     padding: 5rem 0;
 }
 
-.profile::after {
+.perfil::after {
     content: "";
     display: block;
     clear: both;
 }
 
-.profile-img {
+.perfil-foto {
     float: left;
     width: calc(33.33% - 1rem);
     display: flex;
@@ -72,28 +72,28 @@ img {
     margin-right: 3rem;
 }
 
-.profile-img img {
+.perfil-foto img {
     border-radius: 50%;
 }
 
-.profile-setting,
+.perfil-config,
 .profile-stats,
-.profile-bio {
+.perfil-bio {
     float: left;
     width: calc(66.666% - 2rem);
 }
 
-.profile-setting {
+.perfil-config {
     margin-top: 1.1rem;
 }
 
-.profile-user-name {
+.perfil-user {
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;
 }
 
-.profile-edit-btn {
+.perfil-edit {
     font-size: 1.4rem;
     line-height: 1.8;
     border: 0.1rem solid #dbdbdb;
@@ -102,11 +102,11 @@ img {
     margin-left: 2rem;
 }
 
-.profile-status {
+.perfil-status {
     margin-top: 6rem;
 }
 
-.profile-status li {
+.perfil-status li {
     display: inline-block;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -114,24 +114,24 @@ img {
     cursor: pointer;
 }
 
-.profile-status li:last-of-type {
+.perfil-status li:last-of-type {
     margin-right: 0;
 }
 
-.profile-bio {
+.perfil-bio {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
     margin-top: 2.3rem;
 }
 
-.profile-real-name,
-.profile-stat-count,
+.perfil-nome,
+.perfil-status-cont,
 .profile-edit-btn {
     font-weight: 600;
 }
 
-.gallery {
+.galeria {
     display: flex;
     flex-wrap: wrap;
     margin: -1rem -1rem;
@@ -139,7 +139,7 @@ img {
     margin-top: 3rem;
 }
 
-.gallery-item {
+.galeria-item {
     position: relative;
     flex: 1 0 22rem;
     margin: 1rem;
@@ -147,8 +147,8 @@ img {
     cursor: pointer;
 }
 
-.gallery-item:hover .gallery-item-info,
-.gallery-item:focus .gallery-item-info {
+.galeria-item:hover .galeria-info,
+.galeria-item:focus .galeria-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,17 +159,17 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item-info {
+.galeria-info {
     display: none;
 }
 
-.gallery-item-info li {
+.galeria-info li {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.gallery-item-likes {
+.likes {
     margin-right: 50%;
 }
 
@@ -186,7 +186,7 @@ img {
     transform: rotateY(180deg);
 }
 
-.gallery-image {
+.galeria-foto {
     width: 100%;
     height: 100%;
     object-fit: cover;
