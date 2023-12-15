@@ -13,7 +13,7 @@ function verifica(){
     if (email === emailCerto && senha === senhaCerta) {
         alert("Bem vindo de volta, João.")
         setTimeout(function() {
-            window.location.href = "profile.html";
+            window.location.href = "feed.html";
         }, 100);
     } else {
         alert("Email ou senha inválidos.")
