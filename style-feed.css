@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background-color: white;
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -100,6 +100,7 @@ hr {
     padding: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .cartao .top{

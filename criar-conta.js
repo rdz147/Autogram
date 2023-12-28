@@ -11,12 +11,12 @@ function verifica(){
     var senhaCerta = "a";
 
     if (email === emailCerto && senha === senhaCerta) {
-        alert("Bem vindo de volta, João.")
+        window.alert("Bem vindo de volta, João.")
         setTimeout(function() {
             window.location.href = "feed.html";
         }, 100);
     } else {
-        alert("Email ou senha inválidos.")
+        window.alert("Email ou senha inválidos.")
     }
 }
 

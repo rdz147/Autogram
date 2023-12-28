@@ -55,6 +55,7 @@ img {
 
 .perfil {
     padding: 5rem 0;
+    margin-top: -40px;
 }
 
 .perfil::after {
@@ -194,4 +195,16 @@ img {
 
 hr {
     border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.volta {
+    margin-left: 25px;
+    margin-top: 10px;
+    text-align: left;
+    position: relative;
+    justify-content: left;;
+}
+
+.back {
+    text-decoration: none;
 }
