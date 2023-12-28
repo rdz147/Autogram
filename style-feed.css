@@ -183,3 +183,54 @@ hr {
     width: 300px;
     height: 300px;
 }
+
+.foto-post1 {
+    position: relative;
+    top: 0;
+    left: -93px;
+    width: 300px;
+    height: 300px;
+}
+
+.corpo1 {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin-top: -120px;
+}
+
+.corpo2 {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin-top: -120px;
+}
+
+.foto-post2 {
+    position: relative;
+    top: 0;
+    left: -134px;
+    width: 300px;
+    height: 300px;
+}
+
+.corpo3 {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    margin-top: -120px;
+}
+
+.foto-post3 {
+    position: relative;
+    top: 0;
+    left: -116px;
+    width: 300px;
+    height: 300px;
+}
