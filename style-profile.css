@@ -168,6 +168,8 @@ img {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
+    text-align: center;
+    align-items: center;
 }
 
 .likes {
@@ -203,9 +205,27 @@ hr {
     margin-top: 10px;
     text-align: left;
     position: relative;
-    justify-content: left;;
+    justify-content: left;
+    text-decoration: none;
 }
 
 .back {
     text-decoration: none;
+}
+
+.btn-settings {
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-left: 550px;
+    margin-bottom: -50px;
+    margin-top: -90px;
+}
+
+.settings {
+    margin-top: 40px;
+    margin-bottom: -150px;
+    margin-left: 300px;
 }
