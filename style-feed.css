@@ -234,3 +234,10 @@ hr {
     width: 300px;
     height: 300px;
 }
+
+.foto-post4 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: -136px;
+}
