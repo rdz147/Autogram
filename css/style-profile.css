@@ -239,8 +239,28 @@ hr {
     border: 0.1rem solid #5483e1;
     border-radius: 0.3rem;
     padding: 0 2.4rem;
-    margin-left: 2rem;
+    margin-left: 30px;
     background-color: #5483e1;
     color: #ffffff;
     cursor: pointer;
 }
+
+.verificado {
+    width: 15px;
+    height: 15px;
+    background-color: #3897f0;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 22%;
+    margin-top: -4.3%;
+  }
+  
+  .verificado::before {
+    content: "\2713";
+    font-size: 10px;
+    color: white;
+  }
+
+  .perfil-config {
+    justify-content: space-between;
+  }
