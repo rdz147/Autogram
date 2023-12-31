@@ -39,11 +39,10 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content:space-between;
-
 }
 
 .logo {
@@ -64,7 +63,7 @@ header {
     background-color: white;
 }
 
-.titulo_logo{
+.titulo-logo{
     font-size: 20px;
     margin-left: 10px;
 }
@@ -72,11 +71,14 @@ header {
 
 header ul{
     display: flex;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header li{
     margin: 0 15px;
+    margin-right: 20px;
 }
 
 header li a{
@@ -85,6 +87,19 @@ header li a{
 
 header li a:hover{
     color: #807d7d;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar::before {
+    content: '';
+    width: 2px;
+    height: 0px;
+    background-color: #ffffff;
+    margin-right: 10px;
 }
 
 hr {
@@ -136,14 +151,14 @@ hr {
     object-fit: cover;
 }
 
-.cartao .top .usuario h3{
+.cartao .top .usuario h3 {
     font-size: 16px;
     color: #4d4d4f;
     font-weight: 500;
     line-height: 1em;
 }
 
-.cartao .top .usuario h3 span{
+.cartao .top .usuario h3 span {
     font-size: 0.75em;
 }
 
@@ -240,4 +255,18 @@ hr {
     width: 300px;
     height: 300px;
     left: -136px;
+}
+
+a {
+    font-size: 16px;
+    color: #4d4d4f;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+a:hover {
+    font-size: 16px;
+    color: #414142;
+    font-weight: 500;
+    line-height: 1em;
 }
