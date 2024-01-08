@@ -116,7 +116,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -100px;
+    margin-top: -8%;
 }
 
 .cartao .top{
@@ -213,7 +213,7 @@ hr {
     align-items: center;
     min-height: 100vh;
     display: flex;
-    margin-top: -8%;
+    margin-top: -12%;
 }
 
 .corpo2 {

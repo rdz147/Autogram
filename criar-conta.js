@@ -20,3 +20,7 @@ function verifica(){
     }
 }
 
+function like(){
+    var likes = document.getElementsByClassName("likes");
+
+}
