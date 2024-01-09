@@ -216,7 +216,7 @@ hr {
     text-decoration: none;
     font-size: 25px;
     border: none;
-    background-color: #ffffff;
+    background-color: #fafafa;
     cursor: pointer;
     margin-left: 550px;
     margin-bottom: -50px;
@@ -229,7 +229,7 @@ hr {
     margin-left: 300px;
     position: relative;
     bottom: 66px;
-    
+    margin: none;
 }
 
 .perfil-follow {
