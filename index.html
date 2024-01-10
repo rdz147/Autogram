@@ -3,29 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-login.css">
     <link rel="icon" href="img/logo.jpg">
-    <script src="https://kit.fontawesome.com/f017647966.js" crossorigin="anonymous"></script>
     <script src="criar-conta.js"></script>
-    <title>Autogram - Sign In</title>
+    <title>Autogram - Login</title>
 </head>
 <body>
     <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
+        <div class="bola"></div>
+        <div class="bola"></div>
     </div>
 <form>
-    <section class="signin">
-        <h1>Sign In</h1>
-    </section>
-
-    <section class="nome">
-        <label for="idName" class="titulo-caixa">Nome</label>
-        <input type="text" class="caixa" id="idName">
-    </section>
-    <section class="user">
-        <label for="idName" class="titulo-caixa">Usuário</label>
-        <input type="text" class="caixa" id="idName">
+    <section class="Login">
+        <h1>Login</h1>
     </section>
     <section class="email">
         <label for="idEmail" class="titulo-caixa">Email</label>
@@ -36,11 +26,10 @@
         <input type="password" class="caixa" id="idPassword">
     </section>
     <section class="butao">
-        <button>Sign In</button>
+        <button onclick="verifica()" id="butao">Login</button>
     </section>
     <section class="logola">
-        <h3>Já possui uma conta? Faça <a href="login.html">login</a>!</h3>
+        <h3>Não possui uma conta? Faça <a href="sign.html">uma</a>!</h3>
     </section>
-</form>
 </body>
 </html>
