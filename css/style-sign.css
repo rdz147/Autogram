@@ -115,17 +115,15 @@ button{
   color: #eaf0fb;
   text-align: center;
 }
-.social div:hover{
+.social div:hover {
   background-color: rgba(255,255,255,0.47);
 }
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
+
+.social i {
   margin-right: 4px;
 }
 
-.logola{
+.logola {
     margin: auto;
     margin-top: 10%;
     font-family: 'Poppins',sans-serif;
@@ -133,4 +131,13 @@ button{
     letter-spacing: 0.5px;
     outline: none;
     border: none;
+}
+
+.botoes img {
+    height: 26px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-left: 54px;
+    cursor: pointer;
 }
