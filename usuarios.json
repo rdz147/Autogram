@@ -1,0 +1,7 @@
+{
+    "usuarios": [
+      {"email": "rodriguez.joao@outlook.com", "senha": "abc"},
+      {"email": "joaogabrielrdz09@gmail.com", "senha": "def"},
+      {"email": "admin@gmail.com", "senha": "adm"}
+    ]
+  }
