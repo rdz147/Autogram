@@ -1,6 +1,6 @@
 /*document.addEventListener("DOMContentLoaded", function() {    
 document.getElementById("btn").addEventListener("click", function() {
-    verifica();
+    verifica2();
     });
 });
 
@@ -18,6 +18,9 @@ function verifica(){
 }*/
 
 document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("btn").addEventListener("click", function() {
+        verifica2();
+        });
     fetch("usuarios.json")
         .then(response => response.json())
         .then(data => localStorage.setItem("usuarios", JSON.stringify(data.usuarios)))
@@ -38,8 +41,12 @@ function verifica2() {
 
     if (usuarioAutenticado) {
         alert("Login bem-sucedido!");
-        console.log("Redirecionando para feed.html");
-        window.location.href = "feed.html";
+        //console.log("Redirecionando");
+        try {
+            window.location.href = "feed.html";
+        } catch(error) {
+            console.log("deu ruim")
+        }
     } else {
         alert("Credenciais inválidas. Tente novamente.");
     }
