@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="criar-conta.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="porra()">aqui</button>
+
+    <form id="meuForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+    
+        <button type="button" onclick="salvarJSON()">Salvar</button>
+      </form>
+
+      <script>
+        function salvarJSON() {
+      // Obter os valores do formulário
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+
+      // Criar um objeto JSON
+      var usuario = {
+        nome: nome,
+        email: email
+      };
+
+      // Converter o objeto JSON para uma string
+      var jsonString = JSON.stringify(usuario);
+
+      // Criar um Blob com a string JSON
+      var blob = new Blob([jsonString], { type: "application/json" });
+
+      // Criar um link para download do arquivo JSON
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'usuarios.json';
+      
+      // Adicionar o link ao corpo do documento
+      document.body.appendChild(a);
+
+      // Acionar o clique no link para iniciar o download
+      a.click();
+
+      // Remover o link do corpo do documento
+      document.body.removeChild(a);
+    }
+      </script>
+</body>
+</html>

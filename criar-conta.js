@@ -37,7 +37,7 @@ function verifica2() {
         return usuario.email === email && usuario.senha === senha;
     });
 
-    console.log("Usuário autenticado:", usuarioAutenticado);
+    //console.log("Usuário autenticado:", usuarioAutenticado);
 
     if (usuarioAutenticado) {
         alert("Login bem-sucedido!");
@@ -45,7 +45,7 @@ function verifica2() {
         try {
             window.location.href = "feed.html";
         } catch(error) {
-            console.log("deu ruim")
+            //console.log("deu ruim")
         }
     } else {
         alert("Credenciais inválidas. Tente novamente.");
@@ -55,3 +55,29 @@ function verifica2() {
 function porra() {
     window.location.href = "feed.html";
 }
+
+//não sei se o seguinte será util, manter
+
+/*function salvarDados() {
+    var email = document.getElementById('idEmail').value;
+    var senha = document.getElementById('idPassword').value;
+
+    var usuario = {
+        email: email,
+        senha: senha
+    };
+
+    var jsonString = JSON.stringify(usuario);
+
+    var blob = new Blob([jsonString], { type: "application/json" });
+
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'usuario.json';
+    
+    document.body.appendChild(a);
+
+    a.click();
+
+    document.body.removeChild(a);
+} */
