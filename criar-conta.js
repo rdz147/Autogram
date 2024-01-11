@@ -24,10 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error("Erro ao carregar usuários:", error));
 });
 
-function porra() {
-    window.location.href = "feed.html";
-}
-
 function verifica2() {
     var email = document.getElementById("idEmail").value;
     var senha = document.getElementById("idPassword").value;
@@ -43,8 +39,12 @@ function verifica2() {
     if (usuarioAutenticado) {
         alert("Login bem-sucedido!");
         console.log("Redirecionando para feed.html");
-        window.location.replace("feed.html");
+        window.location.href = "feed.html";
     } else {
         alert("Credenciais inválidas. Tente novamente.");
     }
+}
+
+function porra() {
+    window.location.href = "feed.html";
 }
