@@ -86,12 +86,17 @@ img {
 
 .perfil-config {
     margin-top: 1.1rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfil-user {
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;
+    margin-left: 0;
 }
 
 .perfil-edit {
