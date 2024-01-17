@@ -31,6 +31,12 @@ function carrega() {
         .catch(error => console.error("Erro ao carregar usuários:", error));
 };
 
+function salva(usuario) {
+    var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    usuarios.push(usuario);
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+}
+
 function cadastra() {
     var novoEmail = document.getElementById("idEmail").value
     var novaSenha = document.getElementById("idPassword").value
@@ -44,7 +50,7 @@ function cadastra() {
         alert('Email já cadastrado. Use outro email.')
     } else {
         var novoUsuario = { email: novoEmail, senha: novaSenha };
-        salvarUsuario(novoUsuario);
+        salva(novoUsuario);
         alert('Cadastro realizado com sucesso!')
     };
 };
