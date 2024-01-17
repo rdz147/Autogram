@@ -19,39 +19,32 @@ function verifica(){
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("btn").addEventListener("click", function() {
-        verifica2();
-        });
+            cadastra();
+    });
+    carrega();
+});
+
+function carrega() {
     fetch("usuarios.json")
         .then(response => response.json())
         .then(data => localStorage.setItem("usuarios", JSON.stringify(data.usuarios)))
         .catch(error => console.error("Erro ao carregar usuários:", error));
-});
+};
 
-function verifica2() {
-    var email = document.getElementById("idEmail").value;
-    var senha = document.getElementById("idPassword").value;
+function cadastra() {
+    var novoEmail = document.getElementById("idEmail").value
+    var novaSenha = document.getElementById("idPassword").value
 
     var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-    var usuarioAutenticado = usuarios.find(function(usuario) {
-        return usuario.email === email && usuario.senha === senha;
+    var usuarioExistente = usuarios.find(function(usuario) {
+        return usuario.email === novoEmail
     });
 
-    //console.log("Usuário autenticado:", usuarioAutenticado);
-
-    if (usuarioAutenticado) {
-        alert("Login bem-sucedido!");
-        //console.log("Redirecionando");
-        try {
-            window.location.href = "feed.html";
-        } catch(error) {
-            //console.log("deu ruim")
-        }
+    if (usuarioExistente) {
+        alert('Email já cadastrado. Use outro email.')
     } else {
-        alert("Credenciais inválidas. Tente novamente.");
-    }
-}
-
-function porra() {
-    window.location.href = "feed.html";
-}
+        var novoUsuario = { email: novoEmail, senha: novaSenha };
+        salvarUsuario(novoUsuario);
+        alert('Cadastro realizado com sucesso!')
+    };
+};
